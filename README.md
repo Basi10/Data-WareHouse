@@ -18,31 +18,6 @@ Pip3
 docker
 docker-compose
 
-## Usage
-### Docker-compose
-All of the project depebdecies are installed using docker-compose. The docker-compose file is located in the root directory.
-Steps to setup the project:
-1. create a .env file and add the required configurations
-  ```
-
-AIRFLOW_UID=<your_uid>
-AIRFLOW_GID=<your_gid>
-DB_HOST_DEV=<your_db_host>
-DB_PORT_DEV=<your_db_port>
-DB_USER_DEV=<your_db_user>
-DB_PASSWORD_DEV=<your_db_password>
-DB_NAME_DEV=<your_db_name>
-
-<!-- AIRflow -->
-SMTP_HOST=<your_smtp_host>
-SMTP_PORT=<your_smtp_port>
-SMTP_USER=<your_smtp_user>
-SMTP_PASSWORD=<your_smtp_password>
-
-  ```
-2. Run `docker-compose up airflow-init` to initialize airflow user.
-3. Run `docker-compose up -d` to start the project and visit localhost:8080 in your browser to access airflow admin.
-4. Run `docker-compose down` to stop the project.
 
 ## Contrbutors
 - Basilel Birru
