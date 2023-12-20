@@ -5,11 +5,11 @@ from airflow.providers.postgres.operators.postgres import PostgresOperator
 from airflow.utils.dates import days_ago
 
 default_args = {
-    "owner": "jedisam",
+    "owner": "basilelbirru",
     #'start_date': airflow.utils.dates.days_ago(2),
     # 'end_date': datetime(),
     # 'depends_on_past': False,
-    "email": ["yidisam18@gmail.com"],
+    "email": ["basilelbirru@gmail.com"],
     "email_on_failaure": True,
     #'email_on_retry': False,
     # If a task fails, retry it once after waiting
